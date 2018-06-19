@@ -17,5 +17,6 @@ install_java() {
   PATH=$dir/bin:$PATH
   echo $PATH
   echo $dir
+  ls $dir/bin
   echo "Installation complete!"	
 }
