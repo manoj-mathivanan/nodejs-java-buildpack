@@ -14,5 +14,8 @@ install_java() {
   rm -rf $dir/*
   mv /tmp/jdk/jdk-10.0.1/* $dir
   chmod +x $dir/bin
+  PATH=$dir/bin:$PATH
+  echo $PATH
+  echo $dir
   echo "Installation complete!"	
 }
